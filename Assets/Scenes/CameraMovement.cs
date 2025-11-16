@@ -16,6 +16,7 @@ public class CameraMovement : MonoBehaviour
         }
     }
 
+    // test
 
     void Update()
     {
@@ -25,7 +26,6 @@ public class CameraMovement : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, targetPosition, cameraFollowSpeed * Time.deltaTime);
 
-        //transform.LookAt(Player);
     }
 
 }
