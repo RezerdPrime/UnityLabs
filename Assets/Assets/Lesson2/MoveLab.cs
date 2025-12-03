@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Move : MonoBehaviour
+public class MoveLab : MonoBehaviour
 {
 
     // SerializedField - поле которое будет видимо из Unity Editor, лучше чем public, потому что другие элементы не смогут изменить значение
@@ -19,8 +19,8 @@ public class Move : MonoBehaviour
     private Rigidbody rb;
     [Header("Movement speeds")]
     [Min(0)]
-    [SerializeField] float moveSpeed = 5;
-    [SerializeField] float jumpSpeed = 5;
+    [SerializeField] float moveSpeed = 4;
+    [SerializeField] float jumpSpeed = 4;
 
     [Header("Jump Trigger")]
     [Range(0.01f, 1)]
