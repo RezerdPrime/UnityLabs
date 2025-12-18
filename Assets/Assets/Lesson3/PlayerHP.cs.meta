@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 0501b903b7531f64a992a7f92135e1c8
+guid: b3c8e3a774bd57746bade31a19c4a6af
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - Coin: {fileID: 4953773729937295544, guid: 3356ed95da9b76c4294ac7c0288aa190, type: 3}
-  - Spikes: {fileID: 7281932688505675590, guid: 0a9e36efc77eabe469bcc80c1809c72a, type: 3}
   - Tesla: {fileID: 3984832657304557488, guid: 58b0d7ebc5a12804d8c71a76462d2883, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}

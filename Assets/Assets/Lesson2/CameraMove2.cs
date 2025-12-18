@@ -11,8 +11,9 @@ public class CameraMove2 : MonoBehaviour
     {
         if (player != null)
         {
-            offset = new Vector3(1f, 5f, 1f);
+            offset = new Vector3(0f, 4f, -2f);
             transform.position = player.position + offset;
+            //transform.rotation = new Quaternion(20f, 0f, 0f);
         }
     }
 

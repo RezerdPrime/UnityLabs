@@ -5,27 +5,30 @@ using UnityEngine.UI;
 public class CoinUI : MonoBehaviour
 {
     [SerializeField] private Text coinText;
-    [SerializeField] private Collector playerCollector;
+    //[SerializeField] private Collector playerCollector;
+    [SerializeField] public GameObject player;
+
+    Collector playerCollector;
+    PlayerHP playerHP;
 
     void Start()
     {
-        // Авто//if (coinText == null)
-        //    coinText = GetComponent<Text>();
-
-        //// Подписываемся на событие сбора монет
-        //if (playerCollector != null)
-        //{
-        //    playerCollector.coinsCollected.AddListener(UpdateCoinText);
-        //}
-
-        //// Устанавливаем начальное значение
-        //UpdateCoinText(playerCollector != null ? playerCollector.GetCoinsCount() : 0);матически находим компоненты если не назначены
-        
+        playerCollector = player.GetComponent<Collector>();
+        playerHP = player.GetComponent<PlayerHP>();
     }
 
     void Update()
     {
-        coinText.text = $"Coins: {playerCollector.coinsCollected}";
+        int coincount = playerCollector.coinsCollected;
+        float curHP = playerHP.curHP;
+
+        if (curHP > 0)
+        {
+            coinText.text = "Coins: " + coincount + "     HP: " + curHP;
+        } else
+        {
+            coinText.text = "Lol u died";
+        }
     }
 
 

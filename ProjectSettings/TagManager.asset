@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - coin
+  - spike
+  - player
+  - toxicspike
+  - tesla
   layers:
   - Default
   - TransparentFX
